@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#77FFFFFF"
+        android:paddingRight="24dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="100dip"
+            android:layout_height="200dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="3dp"
+            android:scaleType="fitStart"
+            />
+
+        <TextView
+            android:id="@+id/txtNameMovie"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgPoster"
+            android:gravity="center_vertical"
+            android:text="NameMovie"
+            android:textColor="#333333"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtNameDirector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/imgPoster"
+            android:layout_below="@id/txtNameMovie"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dip"
+            android:text="Description"
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtNameStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/imgPoster"
+            android:layout_below="@id/txtNameDirector"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dip"
+            android:text="Description"
+            android:textColor="#333333"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnTrailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Trailer"
+        />
+
+</LinearLayout>
